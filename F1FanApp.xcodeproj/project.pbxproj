@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8713F3F72947A6C80057BCDE /* CurrentScheduleList.json in Resources */ = {isa = PBXBuildFile; fileRef = 8713F3F62947A6C80057BCDE /* CurrentScheduleList.json */; };
+		8713F3F92947B6620057BCDE /* CurrentScheduleListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8713F3F82947B6620057BCDE /* CurrentScheduleListResponse.swift */; };
+		8713F3FC2947B6EC0057BCDE /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8713F3FB2947B6EC0057BCDE /* Models.swift */; };
+		8713F3FE2947CA910057BCDE /* RaceScheduleItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8713F3FD2947CA910057BCDE /* RaceScheduleItemView.swift */; };
+		872F4656292EA51B00396738 /* F1FanAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872F4655292EA51B00396738 /* F1FanAppApp.swift */; };
+		872F465A292EA51F00396738 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 872F4659292EA51F00396738 /* Assets.xcassets */; };
+		872F465D292EA51F00396738 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 872F465C292EA51F00396738 /* Preview Assets.xcassets */; };
+		872F4669292EB75400396738 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872F4668292EB75400396738 /* Symbols.swift */; };
+		872F466B292EBC5800396738 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872F466A292EBC5800396738 /* Theme.swift */; };
+		872F467729315EA300396738 /* StaticJSONMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872F467629315EA300396738 /* StaticJSONMapper.swift */; };
+		87B1E8EC29328A78001310EF /* DriverDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B1E8EB29328A78001310EF /* DriverDetailsResponse.swift */; };
+		87B1E8F02933E7C1001310EF /* DriversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B1E8EF2933E7C1001310EF /* DriversView.swift */; };
+		87B1E8F52933EF54001310EF /* RaceScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B1E8F42933EF54001310EF /* RaceScheduleView.swift */; };
+		87B1E8FD293697E3001310EF /* DriverDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B1E8FC293697E3001310EF /* DriverDetailView.swift */; };
+		87B1E8FF293FCDF5001310EF /* DriversItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B1E8FE293FCDF5001310EF /* DriversItemView.swift */; };
+		87B1E902293FD4F3001310EF /* DriversStanding.json in Resources */ = {isa = PBXBuildFile; fileRef = 87B1E901293FD4F3001310EF /* DriversStanding.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8713F3F62947A6C80057BCDE /* CurrentScheduleList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CurrentScheduleList.json; sourceTree = "<group>"; };
+		8713F3F82947B6620057BCDE /* CurrentScheduleListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentScheduleListResponse.swift; sourceTree = "<group>"; };
+		8713F3FB2947B6EC0057BCDE /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		8713F3FD2947CA910057BCDE /* RaceScheduleItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceScheduleItemView.swift; sourceTree = "<group>"; };
+		872F4652292EA51B00396738 /* F1FanApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = F1FanApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		872F4655292EA51B00396738 /* F1FanAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1FanAppApp.swift; sourceTree = "<group>"; };
+		872F4659292EA51F00396738 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		872F465C292EA51F00396738 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		872F4666292EAEC300396738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		872F4668292EB75400396738 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
+		872F466A292EBC5800396738 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		872F467629315EA300396738 /* StaticJSONMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticJSONMapper.swift; sourceTree = "<group>"; };
+		87B1E8EB29328A78001310EF /* DriverDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDetailsResponse.swift; sourceTree = "<group>"; };
+		87B1E8EF2933E7C1001310EF /* DriversView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversView.swift; sourceTree = "<group>"; };
+		87B1E8F42933EF54001310EF /* RaceScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceScheduleView.swift; sourceTree = "<group>"; };
+		87B1E8FC293697E3001310EF /* DriverDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDetailView.swift; sourceTree = "<group>"; };
+		87B1E8FE293FCDF5001310EF /* DriversItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversItemView.swift; sourceTree = "<group>"; };
+		87B1E901293FD4F3001310EF /* DriversStanding.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DriversStanding.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		872F464F292EA51B00396738 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8713F3FA2947B6940057BCDE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8713F3FB2947B6EC0057BCDE /* Models.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		872F4649292EA51B00396738 = {
+			isa = PBXGroup;
+			children = (
+				872F4654292EA51B00396738 /* F1FanApp */,
+				872F4653292EA51B00396738 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		872F4653292EA51B00396738 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				872F4652292EA51B00396738 /* F1FanApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		872F4654292EA51B00396738 /* F1FanApp */ = {
+			isa = PBXGroup;
+			children = (
+				872F467429315E8100396738 /* Base */,
+				872F4666292EAEC300396738 /* Info.plist */,
+				872F4665292EA5AB00396738 /* RaceSchedule */,
+				872F4664292EA5A000396738 /* Drivers */,
+				87B1E8F729369770001310EF /* DriverDetails */,
+				872F4663292EA59500396738 /* Search */,
+				872F4655292EA51B00396738 /* F1FanAppApp.swift */,
+				872F4659292EA51F00396738 /* Assets.xcassets */,
+				872F4667292EB73800396738 /* Resource */,
+				872F465B292EA51F00396738 /* Preview Content */,
+			);
+			path = F1FanApp;
+			sourceTree = "<group>";
+		};
+		872F465B292EA51F00396738 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				872F465C292EA51F00396738 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		872F4663292EA59500396738 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		872F4664292EA5A000396738 /* Drivers */ = {
+			isa = PBXGroup;
+			children = (
+				872F467129315A6000396738 /* Model */,
+				872F467029315A5700396738 /* ViewModel */,
+				872F466F29315A4E00396738 /* View */,
+			);
+			path = Drivers;
+			sourceTree = "<group>";
+		};
+		872F4665292EA5AB00396738 /* RaceSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				87B1E8F32933EF40001310EF /* View */,
+				87B1E8F22933EF39001310EF /* ViewModel */,
+				87B1E8F12933EF32001310EF /* Model */,
+			);
+			path = RaceSchedule;
+			sourceTree = "<group>";
+		};
+		872F4667292EB73800396738 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				87B1E8F62936116D001310EF /* Photos */,
+				872F466C292EBEDF00396738 /* JSON */,
+				872F4668292EB75400396738 /* Symbols.swift */,
+				872F466A292EBC5800396738 /* Theme.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		872F466C292EBEDF00396738 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				87B1E901293FD4F3001310EF /* DriversStanding.json */,
+				8713F3F62947A6C80057BCDE /* CurrentScheduleList.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		872F466F29315A4E00396738 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				87B1E8EF2933E7C1001310EF /* DriversView.swift */,
+				87B1E8FE293FCDF5001310EF /* DriversItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		872F467029315A5700396738 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		872F467129315A6000396738 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				87B1E8EB29328A78001310EF /* DriverDetailsResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		872F467429315E8100396738 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8713F3FA2947B6940057BCDE /* Model */,
+				872F467529315E8D00396738 /* Mapper */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		872F467529315E8D00396738 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				872F467629315EA300396738 /* StaticJSONMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		87B1E8F12933EF32001310EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8713F3F82947B6620057BCDE /* CurrentScheduleListResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		87B1E8F22933EF39001310EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		87B1E8F32933EF40001310EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				87B1E8F42933EF54001310EF /* RaceScheduleView.swift */,
+				8713F3FD2947CA910057BCDE /* RaceScheduleItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		87B1E8F62936116D001310EF /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		87B1E8F729369770001310EF /* DriverDetails */ = {
+			isa = PBXGroup;
+			children = (
+				87B1E8FB293697CF001310EF /* Model */,
+				87B1E8FA293697C3001310EF /* ViewModel */,
+				87B1E8F9293697BD001310EF /* View */,
+			);
+			path = DriverDetails;
+			sourceTree = "<group>";
+		};
+		87B1E8F9293697BD001310EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				87B1E8FC293697E3001310EF /* DriverDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		87B1E8FA293697C3001310EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		87B1E8FB293697CF001310EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		872F4651292EA51B00396738 /* F1FanApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 872F4660292EA51F00396738 /* Build configuration list for PBXNativeTarget "F1FanApp" */;
+			buildPhases = (
+				872F464E292EA51B00396738 /* Sources */,
+				872F464F292EA51B00396738 /* Frameworks */,
+				872F4650292EA51B00396738 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = F1FanApp;
+			productName = F1FanApp;
+			productReference = 872F4652292EA51B00396738 /* F1FanApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		872F464A292EA51B00396738 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					872F4651292EA51B00396738 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 872F464D292EA51B00396738 /* Build configuration list for PBXProject "F1FanApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 872F4649292EA51B00396738;
+			productRefGroup = 872F4653292EA51B00396738 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				872F4651292EA51B00396738 /* F1FanApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		872F4650292EA51B00396738 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				872F465D292EA51F00396738 /* Preview Assets.xcassets in Resources */,
+				872F465A292EA51F00396738 /* Assets.xcassets in Resources */,
+				8713F3F72947A6C80057BCDE /* CurrentScheduleList.json in Resources */,
+				87B1E902293FD4F3001310EF /* DriversStanding.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		872F464E292EA51B00396738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8713F3FC2947B6EC0057BCDE /* Models.swift in Sources */,
+				87B1E8F02933E7C1001310EF /* DriversView.swift in Sources */,
+				8713F3F92947B6620057BCDE /* CurrentScheduleListResponse.swift in Sources */,
+				87B1E8FF293FCDF5001310EF /* DriversItemView.swift in Sources */,
+				872F4669292EB75400396738 /* Symbols.swift in Sources */,
+				872F466B292EBC5800396738 /* Theme.swift in Sources */,
+				872F467729315EA300396738 /* StaticJSONMapper.swift in Sources */,
+				87B1E8F52933EF54001310EF /* RaceScheduleView.swift in Sources */,
+				872F4656292EA51B00396738 /* F1FanAppApp.swift in Sources */,
+				87B1E8EC29328A78001310EF /* DriverDetailsResponse.swift in Sources */,
+				87B1E8FD293697E3001310EF /* DriverDetailView.swift in Sources */,
+				8713F3FE2947CA910057BCDE /* RaceScheduleItemView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		872F465E292EA51F00396738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		872F465F292EA51F00396738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		872F4661292EA51F00396738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"F1FanApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 2WQXXBL496;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = F1FanApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.putkowski.F1FanApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		872F4662292EA51F00396738 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"F1FanApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 2WQXXBL496;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = F1FanApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.putkowski.F1FanApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		872F464D292EA51B00396738 /* Build configuration list for PBXProject "F1FanApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				872F465E292EA51F00396738 /* Debug */,
+				872F465F292EA51F00396738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		872F4660292EA51F00396738 /* Build configuration list for PBXNativeTarget "F1FanApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				872F4661292EA51F00396738 /* Debug */,
+				872F4662292EA51F00396738 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 872F464A292EA51B00396738 /* Project object */;
+}

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "maclaren_team.jpeg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
