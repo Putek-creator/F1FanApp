@@ -10,6 +10,7 @@ import SwiftUI
 struct DriversView: View {
     
     @State private var driverStanding: [DriverStanding] = []
+    @State private var searchText = ""
     
     var body: some View {
         NavigationView {
@@ -18,7 +19,7 @@ struct DriversView: View {
                 
                 ScrollView {
                     LazyVStack() {
-                        ForEach(driverStanding, id: \.driver.driverId) { driverStanding in
+                        ForEach(searchText == "" ? driverStanding : driverStanding.filter({ $0.driver.familyName.lowercased().contains(searchText.lowercased()) || $0.driver.givenName.lowercased().contains(searchText.lowercased()) }), id: \.driver.driverId) { driverStanding in
                             NavigationLink {
                                 DriverDetailView(previewDriver: driverStanding)
                             } label: {
@@ -26,7 +27,7 @@ struct DriversView: View {
                             }
                         }
                     }
-                }
+                }.searchable(text: $searchText)
             }
         .navigationTitle("Drivers")
         .toolbar(.visible, for: .tabBar)
