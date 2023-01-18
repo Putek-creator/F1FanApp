@@ -11,6 +11,7 @@ struct DriversView: View {
     
     @StateObject private var vm = DriversViewModel()
     @State private var searchText = ""
+    @State private var isLoading = true
     
     var body: some View {
         NavigationView {
@@ -19,11 +20,15 @@ struct DriversView: View {
 
                 ScrollView {
                     LazyVStack() {
-                        ForEach(vm.filterDriver(searchText: searchText), id: \  .driver.driverId) { driverStanding in
-                            NavigationLink {
-                                DriverDetailView(previewDriver: driverStanding)
-                            } label: {
-                                DriversItemView(driverStanding: driverStanding)
+                        if isLoading {
+                            Text("Loading data ...")
+                        } else {
+                            ForEach(vm.filterDriver(searchText: searchText), id: \  .driver.driverId) { driverStanding in
+                                NavigationLink {
+                                    DriverDetailView(previewDriver: driverStanding)
+                                } label: {
+                                    DriversItemView(driverStanding: driverStanding)
+                                }
                             }
                         }
                     }
@@ -32,6 +37,7 @@ struct DriversView: View {
         .navigationTitle("Drivers")
         }.onAppear {
             vm.fetchData()
+            self.isLoading = false
         }
     }
 }

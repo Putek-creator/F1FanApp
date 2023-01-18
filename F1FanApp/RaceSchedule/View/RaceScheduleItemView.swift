@@ -13,24 +13,11 @@ struct RaceScheduleItemView: View {
     
     var body: some View {
         HStack() {
-            Image("\(race.circuit.location.country.lowercased())")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 100, height: 100, alignment: .leading)
-                .clipped()
-            VStack(alignment: .center) {
-                Text("\(race.raceName)")
-                    .font(.headline)
-                    .foregroundColor(Color.black)
-            }.frame(minWidth: 150)
-                .padding(10)
+            countryImage
+            raceName
             VStack() {
-                Text("\(race.date)")
-                    .font(.headline)
-                    .foregroundColor(Color.black)
-                Text("\(race.time)")
-                    .font(.headline)
-                    .foregroundColor(Color.black)
+                raceDate
+                raceTime
             }
         }
         .frame(
@@ -52,5 +39,37 @@ struct RaceScheduleItemView_Previews: PreviewProvider {
     
     static var previews: some View {
         RaceScheduleItemView(race: raceData)
+    }
+}
+
+extension RaceScheduleItemView {
+    
+    private var countryImage: some View {
+        Image("\(race.circuit.location.country.lowercased())")
+            .resizable()
+            .scaledToFit()
+            .frame(width: 100, height: 100, alignment: .leading)
+            .clipped()
+    }
+    
+    private var raceName: some View {
+        VStack(alignment: .center) {
+            Text("\(race.raceName)")
+                .font(.headline)
+                .foregroundColor(Color.black)
+        }.frame(minWidth: 150)
+            .padding(10)
+    }
+    
+    private var raceDate: some View {
+        Text("\(race.date)")
+            .font(.headline)
+            .foregroundColor(Color.black)
+    }
+    
+    private var raceTime: some View {
+        Text("\(race.time)")
+            .font(.headline)
+            .foregroundColor(Color.black)
     }
 }

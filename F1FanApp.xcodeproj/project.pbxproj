@@ -17,6 +17,7 @@
 		872F4669292EB75400396738 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872F4668292EB75400396738 /* Symbols.swift */; };
 		872F466B292EBC5800396738 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872F466A292EBC5800396738 /* Theme.swift */; };
 		872F467729315EA300396738 /* StaticJSONMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872F467629315EA300396738 /* StaticJSONMapper.swift */; };
+		8754D9232978720B00BBEA3A /* RaceScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8754D9222978720B00BBEA3A /* RaceScheduleViewModel.swift */; };
 		87B1E8EC29328A78001310EF /* DriverDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B1E8EB29328A78001310EF /* DriverDetailsResponse.swift */; };
 		87B1E8F02933E7C1001310EF /* DriversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B1E8EF2933E7C1001310EF /* DriversView.swift */; };
 		87B1E8F52933EF54001310EF /* RaceScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B1E8F42933EF54001310EF /* RaceScheduleView.swift */; };
@@ -25,7 +26,6 @@
 		87B1E902293FD4F3001310EF /* DriversStanding.json in Resources */ = {isa = PBXBuildFile; fileRef = 87B1E901293FD4F3001310EF /* DriversStanding.json */; };
 		87C503942965F07B0079049E /* DriversViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C503932965F07B0079049E /* DriversViewModel.swift */; };
 		87C50396296C98CB0079049E /* TeamColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C50395296C98CB0079049E /* TeamColor.swift */; };
-		87C50399296C9FB70079049E /* BuildableFromStringEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C50398296C9FB70079049E /* BuildableFromStringEnum.swift */; };
 		87DCAA52295CC7A100B1D323 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DCAA51295CC7A100B1D323 /* NetworkingManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +42,7 @@
 		872F4668292EB75400396738 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
 		872F466A292EBC5800396738 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		872F467629315EA300396738 /* StaticJSONMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticJSONMapper.swift; sourceTree = "<group>"; };
+		8754D9222978720B00BBEA3A /* RaceScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceScheduleViewModel.swift; sourceTree = "<group>"; };
 		87B1E8EB29328A78001310EF /* DriverDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDetailsResponse.swift; sourceTree = "<group>"; };
 		87B1E8EF2933E7C1001310EF /* DriversView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversView.swift; sourceTree = "<group>"; };
 		87B1E8F42933EF54001310EF /* RaceScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceScheduleView.swift; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		87B1E901293FD4F3001310EF /* DriversStanding.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DriversStanding.json; sourceTree = "<group>"; };
 		87C503932965F07B0079049E /* DriversViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversViewModel.swift; sourceTree = "<group>"; };
 		87C50395296C98CB0079049E /* TeamColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamColor.swift; sourceTree = "<group>"; };
-		87C50398296C9FB70079049E /* BuildableFromStringEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildableFromStringEnum.swift; sourceTree = "<group>"; };
 		87DCAA51295CC7A100B1D323 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -189,7 +189,6 @@
 		872F467429315E8100396738 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				87C50397296C9FA30079049E /* Helpers */,
 				87DCAA50295CC79000B1D323 /* API */,
 				8713F3FA2947B6940057BCDE /* Model */,
 				872F467529315E8D00396738 /* Mapper */,
@@ -216,6 +215,7 @@
 		87B1E8F22933EF39001310EF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8754D9222978720B00BBEA3A /* RaceScheduleViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -259,14 +259,6 @@
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		87C50397296C9FA30079049E /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				87C50398296C9FB70079049E /* BuildableFromStringEnum.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		87DCAA50295CC79000B1D323 /* API */ = {
@@ -359,9 +351,9 @@
 				872F467729315EA300396738 /* StaticJSONMapper.swift in Sources */,
 				87B1E8F52933EF54001310EF /* RaceScheduleView.swift in Sources */,
 				87DCAA52295CC7A100B1D323 /* NetworkingManager.swift in Sources */,
+				8754D9232978720B00BBEA3A /* RaceScheduleViewModel.swift in Sources */,
 				872F4656292EA51B00396738 /* F1FanAppApp.swift in Sources */,
 				87B1E8EC29328A78001310EF /* DriverDetailsResponse.swift in Sources */,
-				87C50399296C9FB70079049E /* BuildableFromStringEnum.swift in Sources */,
 				87B1E8FD293697E3001310EF /* DriverDetailView.swift in Sources */,
 				87C50396296C98CB0079049E /* TeamColor.swift in Sources */,
 				8713F3FE2947CA910057BCDE /* RaceScheduleItemView.swift in Sources */,
