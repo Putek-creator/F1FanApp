@@ -2,6 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Exeption Domains</key>
+	<dict>
+		<key>ergast.com</key>
+		<dict>
+			<key>NSIncludesSubdomains</key>
+			<string>TSLv1.1</string>
+			<key>NSTemporaryExceptionAllowInsecureHTTPLoads</key>
+			<true/>
+			<key>NSTemporaryExceptionMinimumTLSVersion</key>
+			<true/>
+		</dict>
+	</dict>
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UIColorName</key>

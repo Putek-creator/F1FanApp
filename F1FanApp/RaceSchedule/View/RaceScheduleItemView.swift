@@ -13,12 +13,12 @@ struct RaceScheduleItemView: View {
     
     var body: some View {
         HStack() {
-            Image("\(race.circuit.circuitId)")
+            Image("\(race.circuit.location.country.lowercased())")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 100, height: 100, alignment: .leading)
                 .clipped()
-            VStack() {
+            VStack(alignment: .center) {
                 Text("\(race.raceName)")
                     .font(.headline)
                     .foregroundColor(Color.black)

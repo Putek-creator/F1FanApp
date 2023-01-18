@@ -9,17 +9,17 @@ import SwiftUI
 
 struct DriversView: View {
     
-    @State private var driverStanding: [DriverStanding] = []
+    @StateObject private var vm = DriversViewModel()
     @State private var searchText = ""
     
     var body: some View {
         NavigationView {
             ZStack {
                 background
-                
+
                 ScrollView {
                     LazyVStack() {
-                        ForEach(searchText == "" ? driverStanding : driverStanding.filter({ $0.driver.familyName.lowercased().contains(searchText.lowercased()) || $0.driver.givenName.lowercased().contains(searchText.lowercased()) }), id: \.driver.driverId) { driverStanding in
+                        ForEach(vm.filterDriver(searchText: searchText), id: \  .driver.driverId) { driverStanding in
                             NavigationLink {
                                 DriverDetailView(previewDriver: driverStanding)
                             } label: {
@@ -30,17 +30,8 @@ struct DriversView: View {
                 }.searchable(text: $searchText)
             }
         .navigationTitle("Drivers")
-        .toolbar(.visible, for: .tabBar)
         }.onAppear {
-            do {
-                let res = try StaticJSONMapper.decode(file: "DriversStanding", type: DriverDetailsResponse.self)
-                
-                driverStanding = res.mrData.standingsTable!.standingsLists.first!.driverStandings
-                
-            } catch {
-                // TODO: Handle error
-                print(error)
-            }
+            vm.fetchData()
         }
     }
 }

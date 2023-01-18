@@ -15,26 +15,14 @@ struct DriversItemView: View {
         
         HStack() {
             driverTeamColor
-            Image("\(driverStanding.driver.driverId)_photo")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 130, height: 130, alignment: .leading)
-                .clipped()
+            driverPhoto
             VStack() {
-                Text(driverStanding.driver.givenName)
-                    .font(.headline)
-                    .foregroundColor(Color.black)
-                Text(driverStanding.driver.familyName)
-                    .font(.subheadline)
-                    .foregroundColor(Color.black)
+                firstName
+                sureName
             }.frame(minWidth: 100)
             VStack() {
-                Text("Position: \(driverStanding.position)")
-                    .font(.subheadline)
-                    .foregroundColor(Color.black)
-                Text("Points: \(driverStanding.points)")
-                    .font(.headline)
-                    .foregroundColor(Color.black)
+                position
+                points
             }
         }
         .frame(
@@ -63,8 +51,40 @@ extension DriversItemView {
     
     var driverTeamColor: some View {
         Rectangle()
-            .fill(Color.red)
+            .fill(driverStanding.constructors.first!.color)
             .frame(width: 5, height: 130, alignment: .leading)
             .padding()
+    }
+    
+    var driverPhoto: some View {
+        Image("\(driverStanding.driver.driverId)_photo")
+            .resizable()
+            .scaledToFit()
+            .frame(width: 130, height: 130, alignment: .leading)
+            .clipped()
+    }
+    
+    var firstName: some View {
+        Text(driverStanding.driver.givenName)
+            .font(.headline)
+            .foregroundColor(Color.black)
+    }
+    
+    var sureName: some View {
+        Text(driverStanding.driver.familyName)
+            .font(.subheadline)
+            .foregroundColor(Color.black)
+    }
+    
+    var position: some View {
+        Text("Position: \(driverStanding.position)")
+            .font(.subheadline)
+            .foregroundColor(Color.black)
+    }
+    
+    var points: some View {
+        Text("Points: \(driverStanding.points)")
+            .font(.headline)
+            .foregroundColor(Color.black)
     }
 }

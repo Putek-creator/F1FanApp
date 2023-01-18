@@ -36,9 +36,9 @@ struct DriversDetailView_Previews: PreviewProvider {
     
     static var previewDriver: DriverStanding {
         
-        let data = try! StaticJSONMapper.decode(file: "DriversStanding", type: DriverDetailsResponse.self)
+        let data = try! StaticJSONMapper.decode(file: "DriversStanding", type: MRData.self)
             
-        return data.mrData.standingsTable!.standingsLists.first!.driverStandings[0]
+        return data.standingsTable!.standingsLists.first!.driverStandings[0]
     }
 }
 
@@ -79,7 +79,7 @@ private extension DriverDetailView {
     
     var lastName: some View {
         VStack{
-            Text("Second name")
+            Text("Second name:")
                 .font(
                     .system(.body, design: .rounded)
                     .weight(.semibold)
