@@ -8,4 +8,4 @@ Short showcase:
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/72507304/213776573-c6cb5ab5-798a-4fc1-a6ca-ad9e17d4dcb8.gif)
 
 Technologies:
-SwiftUI, Swift, Postman.
+SwiftUI, Swift, MVVM, Postman.
