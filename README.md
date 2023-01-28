@@ -5,7 +5,8 @@ Also you can preview drivers and you can see basic info about them. In the futur
 And availability to add race into calendar.
 Short showcase:
 
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/72507304/213776573-c6cb5ab5-798a-4fc1-a6ca-ad9e17d4dcb8.gif)
+![bez nazwy](https://user-images.githubusercontent.com/72507304/215273255-50ec3852-5fb8-459e-b7e1-43bb6458f1ac.gif)
+
 
 Technologies:
 SwiftUI, Swift, MVVM, Postman.
