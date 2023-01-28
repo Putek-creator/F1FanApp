@@ -9,6 +9,8 @@ import SwiftUI
 
 struct RaceScheduleItemView: View {
     
+    @StateObject private var vm = CalendarViewModel()
+    @State private var showAlert: Bool = false
     let race: Race
     
     var body: some View {
@@ -26,6 +28,17 @@ struct RaceScheduleItemView: View {
               alignment: .leading
         )
         .shadow(radius: 30)
+        .alert(isPresented: $showAlert) {
+            Alert(title: Text("Event"),
+                  message: Text("Do you want to add \(race.raceName) to calendar?"),
+                  primaryButton: .default(Text("Yes"), action: {
+                self.vm.addEventToCalendar(self.race)
+                print("Race added to calendar")
+                    }), secondaryButton: .cancel())
+                }
+                .onTapGesture {
+                    self.showAlert = true
+                }
     }
 }
 
