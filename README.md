@@ -9,4 +9,4 @@ Short showcase (date doesn't match with this in view because I recorded it after
 
 
 Technologies:
-SwiftUI, Swift, MVVM, Postman.
+SwiftUI, Swift, MVVM, Postman, EventKit, EventKitUI.
